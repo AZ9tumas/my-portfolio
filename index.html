@@ -3,177 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>az9tumas - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="light-mode">
-    <div class="mode-toggle">
-        <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
-        <label for="theme-toggle"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></label>
-    </div>
+    <title>az9tumas // Digital Architect</title>
 
-    <header class="header-section">
-        <div class="header-content">
-            <h1>az9tumas</h1>
-            <p>// Roblox Developer //</p>
-        </div>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feather Icons (for sleek, modern icons) -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">// az9tumas</a>
+            <ul class="nav-menu">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link btn btn-outline">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#biography">Biography</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <h1 class="hero-headline">Systems Architect & Creative Technologist</h1>
+                <p class="hero-subline">Designing and building robust, efficient, and immersive digital experiences on Roblox and beyond. Specializing in machine learning, algorithm design, and full-stack game development.</p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="services" class="services-section">
-        <div class="services-grid">
-            <div class="service-item">
-                <i class="fas fa-brain icon"></i>
-                <h3>MACHINE LEARNING</h3>
-                <p>Skilled in ML pipelines and model deployment for game integrations and AI features.</p>
+        <!-- SERVICES SECTION -->
+        <section id="services" class="content-section">
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i data-feather="cpu" class="service-icon"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Skilled in deploying ML models and developing AI features that integrate seamlessly into game environments, creating smarter and more dynamic experiences.</p>
+                </div>
+                <div class="service-card">
+                    <i data-feather="play-circle" class="service-icon"></i>
+                    <h3>Roblox Game Development</h3>
+                    <p>Architecting immersive multiplayer systems from the ground up, with a strong focus on performance, scalability, and optimization for high-concurrency.</p>
+                </div>
+                <div class="service-card">
+                    <i data-feather="git-merge" class="service-icon"></i>
+                    <h3>Algorithm & Systems Design</h3>
+                    <p>A deep foundation in data structures and competitive programming, enabling the design of efficient, elegant solutions to complex back-end challenges.</p>
+                </div>
             </div>
-            <div class="service-item">
-                <i class="fas fa-gamepad icon"></i>
-                <h3>ROBLOX GAME DEVELOPMENT</h3>
-                <p>Architecting and optimizing immersive multiplayer systems for Roblox experiences.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-cogs icon"></i>
-                <h3>ALGORITHM AND SYSTEMS DESIGN</h3>
-                <p>Strong foundation in data structures, competitive programming, and backend optimization.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="biography" class="biography-section">
-        <h2>Biography</h2>
-        <div class="bio-content">
-            <div class="personal-info">
-                <h4><i class="fas fa-user"></i> PERSONAL INFO</h4>
-                <p><strong>Username:</strong> az9tumas</p>
-                <p><strong>Email:</strong> rounakdas2025@gmail.com</p>
-                <p><strong>Discord:</strong> az9tumas</p>
-                <p><strong>Location:</strong> India</p>
-                <p><strong>Status:</strong> College Student</p>
-                <p><strong>Timezone:</strong> IST</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="experience-section">
-        <h2>Work Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Freelance Commissions & Exploration</h3>
-                    <p class="date">2022 – Present</p>
-                    <p>Worked on various Roblox games through commissions, contributing to system architecture and optimizations. Expanded skills into web development, machine learning, and algorithm design.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Developer, Terror's Past (Roblox)</h3>
-                    <p class="date">2020 – 2022</p>
-                    <p>Developed core systems for multiplayer games, including prototypes for mechanics, AI, and tools. Supported high-concurrency environments.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Personal Projects & Collaborations</h3>
-                    <p class="date">Pre-2020</p>
-                    <p>Built personal Roblox projects and collaborated on horror-inspired games, gaining foundational experience in mechanics and optimization.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="portfolio-section">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <div class="media-container">
-                    <video controls>
-                        <source src="assets/AiSystemTest.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="description">
-                    <h3>AI System Prototype</h3>
-                    <p>Prototype for an AI system where creatures and dinosaurs roam freely. Players can interact by attacking and feeding, enhancing gameplay in open-world settings.</p>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="media-container">
-                    <video controls>
-                        <source src="assets/consoleRBX.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="description">
-                    <h3>In-Game Console UI</h3>
-                    <p>Custom terminal UI for developers and administrators. Enables control over game systems, parameter manipulation, and player management (e.g., status reviews, bans, kicks).</p>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="media-container">
-                    <video controls>
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="content-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <!-- Featured Project -->
+            <div class="portfolio-featured">
+                <div class="portfolio-featured-video">
+                     <video controls autoplay muted loop>
                         <source src="assets/RoomGenRBX.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
                     </video>
                 </div>
-                <div class="description">
+                <div class="portfolio-featured-description">
+                    <span class="tag">Systems Design</span>
                     <h3>Dynamic Room Generation</h3>
-                    <p>Implementation for a horror game museum with procedural room generation. Adds variation to structure each round, improving replayability.</p>
+                    <p>A procedural generation system for a horror game museum. This implementation adds significant replayability by creating unique structural variations each round, ensuring no two experiences are the same.</p>
                 </div>
             </div>
 
-            <div class="portfolio-item">
-                <div class="media-container">
-                    <video controls>
-                        <source src="assets/CameraTest.mp4" type="video/mp4">
-                    </video>
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-media">
+                         <video controls>
+                            <source src="assets/AiSystemTest.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="portfolio-description">
+                        <h4>AI System Prototype</h4>
+                        <p>An interactive AI where creatures roam freely. Players can attack and feed them, enhancing gameplay in open-world settings.</p>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Dynamic Camera Movement</h3>
-                    <p>Clip showcasing camera movements to enhance realism in Roblox games. Integrated into systems for immersive player experiences.</p>
+                <div class="portfolio-item">
+                     <div class="portfolio-media">
+                        <img src="assets/minimap.webp" alt="Procedural Minimap Generation">
+                    </div>
+                    <div class="portfolio-description">
+                        <h4>Procedural Minimap</h4>
+                        <p>A script-generated minimap using external pixel data processing, enabling efficient navigation in large game worlds.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                     <div class="portfolio-media">
+                        <video controls>
+                            <source src="assets/consoleRBX.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="portfolio-description">
+                        <h4>In-Game Dev Console</h4>
+                        <p>Custom terminal UI for admins to control game systems, manage players, and modify parameters in real-time.</p>
+                    </div>
+                </div>
+                 <div class="portfolio-item">
+                    <div class="portfolio-media">
+                        <video controls>
+                            <source src="assets/EatAndDrinkTP.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="portfolio-description">
+                        <h4>Survival Mechanics</h4>
+                        <p>Prototype of a refined eating and drinking system designed for multiplayer survival mechanics.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="portfolio-item">
-                <div class="media-container">
-                    <img src="assets/minimap.webp" alt="Minimap Generation">
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="content-section">
+            <h2 class="section-title">Career Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-year">2022 - Present</span>
+                        <span class="timeline-marker"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Freelance Commissions & Skill Expansion</h3>
+                        <p>Contributed to diverse Roblox games via commissions, focusing on system architecture and performance optimization. Simultaneously expanded expertise into web development, machine learning, and advanced algorithm design.</p>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Procedural Minimap</h3>
-                    <p>Script-generated minimap using external pixel data processing. View the repository: <a href="https://github.com/AZ9tumas/Roblox-Image-Renderer">GitHub</a>. Supports efficient navigation in large worlds.</p>
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                         <span class="timeline-year">2020 - 2022</span>
+                        <span class="timeline-marker"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Developer, Terror's Past (Roblox)</h3>
+                        <p>Developed core systems for high-concurrency multiplayer games. Prototyped and implemented key gameplay mechanics, AI behaviors, and internal development tools in a live service environment.</p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-year">Pre-2020</span>
+                        <span class="timeline-marker"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Foundational Projects & Collaborations</h3>
+                        <p>Built a strong foundation in game mechanics and code optimization through personal Roblox projects and collaborations on horror-themed games, sparking an interest in systems architecture.</p>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Let's Build Together</h2>
+            <p class="contact-subline">Have a project in mind or an interesting challenge to solve? I'm available for freelance commissions and collaborations.</p>
+            <p class="contact-info">
+                <span class="contact-label">// Email</span>
+                <a href="mailto:rounakdas2025@gmail.com">rounakdas2025@gmail.com</a>
+            </p>
+             <p class="contact-info">
+                <span class="contact-label">// Discord</span>
+                <span>az9tumas</span>
+            </p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2025 az9tumas. All Rights Reserved.</p>
+            <p class="footer-note">Designed with a "Digital Architect" ethos. Built on a foundation of clean code and minimalist design.</p>
         </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <p>Email: rounakdas2025@gmail.com</p>
-        <p>Discord: az9tumas</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 az9tumas. All rights reserved.</p>
     </footer>
 
+    <!-- Script to activate Feather Icons -->
     <script>
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            document.body.classList.toggle('light-mode');
-        }
+      feather.replace()
     </script>
 </body>
 </html>

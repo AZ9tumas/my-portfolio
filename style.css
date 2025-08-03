@@ -1,0 +1,401 @@
+/* ---
+   STYLE.CSS | "The Digital Architect" Concept
+--- */
+
+/* 1. ROOT VARIABLES & GLOBAL STYLES
+------------------------------------- */
+:root {
+    --bg-color: #111111;
+    --text-color: #EAEAEA;
+    --primary-accent: #00A8FF; /* Electric Blue */
+    --secondary-accent: #888888;
+    --surface-color: #191919;
+    --border-color: #2b2b2b;
+
+    --font-primary: 'Manrope', sans-serif;
+    --font-secondary: 'Source Code Pro', monospace;
+    
+    --transition-speed: 0.3s;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; color: var(--text-color); }
+h3 { font-size: 1.5rem; color: var(--primary-accent); }
+h4 { font-size: 1.2rem; }
+
+p {
+    margin-bottom: 1rem;
+    max-width: 65ch; /* Improves readability */
+}
+
+a {
+    color: var(--primary-accent);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* 2. REUSABLE COMPONENTS
+------------------------------------- */
+.content-section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 800;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-accent);
+    margin: 0.5rem auto 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    text-align: center;
+    transition: all var(--transition-speed) ease;
+}
+
+.btn-outline {
+    border: 2px solid var(--primary-accent);
+    color: var(--primary-accent);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-accent);
+    color: var(--bg-color);
+}
+
+/* 3. HEADER & NAVIGATION
+------------------------------------- */
+.main-header {
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background-color: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+.nav-logo:hover {
+    color: var(--primary-accent);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-accent);
+}
+
+/* 4. HERO SECTION
+------------------------------------- */
+.hero-section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-headline {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+}
+
+.hero-subline {
+    font-size: 1.1rem;
+    color: var(--secondary-accent);
+    margin: 2rem 0;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-accent);
+    color: var(--bg-color);
+}
+.btn-primary:hover {
+    opacity: 0.85;
+}
+.btn-secondary {
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+}
+.btn-secondary:hover {
+    border-color: var(--primary-accent);
+    color: var(--primary-accent);
+}
+
+
+/* 5. SERVICES SECTION
+------------------------------------- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: var(--surface-color);
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 168, 255, 0.1);
+}
+
+.service-icon {
+    color: var(--primary-accent);
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+}
+
+/* 6. PORTFOLIO SECTION
+------------------------------------- */
+.portfolio-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.tag {
+    display: inline-block;
+    font-family: var(--font-secondary);
+    color: var(--secondary-accent);
+    margin-bottom: 1rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform var(--transition-speed);
+}
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-description {
+    padding: 1.5rem;
+}
+.portfolio-description h4 { color: var(--text-color); }
+.portfolio-description p { color: var(--secondary-accent); font-size: 0.9rem; margin-bottom: 0;}
+
+
+/* 7. EXPERIENCE SECTION (TIMELINE)
+------------------------------------- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--border-color);
+    left: 100px;
+    top: 10px;
+    bottom: 10px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 2rem;
+    position: relative;
+    padding: 1rem 0 3rem 0;
+}
+
+.timeline-meta {
+    text-align: right;
+    padding-right: 2rem;
+    font-family: var(--font-secondary);
+    color: var(--secondary-accent);
+    font-size: 0.9rem;
+}
+
+.timeline-year {
+    display: block;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 14px;
+    left: 92px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-accent);
+    border-radius: 50%;
+    border: 3px solid var(--bg-color);
+}
+
+.timeline-title {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: var(--secondary-accent);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+
+/* 8. CONTACT SECTION
+------------------------------------- */
+.contact-section {
+    text-align: center;
+    padding-bottom: 8rem;
+}
+.contact-subline {
+    color: var(--secondary-accent);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-info {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+.contact-label {
+    font-family: var(--font-secondary);
+    color: var(--secondary-accent);
+    margin-right: 1rem;
+}
+
+
+/* 9. FOOTER
+------------------------------------- */
+.main-footer {
+    border-top: 1px solid var(--border-color);
+    padding: 2rem;
+    text-align: center;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-note {
+    font-size: 0.9rem;
+    color: var(--secondary-accent);
+    font-family: var(--font-secondary);
+    margin-bottom: 0;
+}
+
+
+/* 10. RESPONSIVE DESIGN
+------------------------------------- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+
+    .nav-menu { display: none; } /* Add hamburger menu logic if needed */
+
+    .hero-section { text-align: center; }
+    .hero-cta { justify-content: center; }
+
+    .portfolio-featured { grid-template-columns: 1fr; }
+    
+    .timeline::before { left: 10px; }
+    .timeline-item { grid-template-columns: 1fr; gap: 1rem; padding-left: 40px; }
+    .timeline-meta { text-align: left; padding-left: 0; margin-bottom: 1rem; }
+    .timeline-marker { left: 3px; }
+}
