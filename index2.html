@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>az9tumas // Digital Architect</title>
 
-    <!-- Google Fonts: Plus Jakarta Sans (Headings) & Inter (Body) -->
+    <!-- Google Fonts: Figtree (Headings) & Inter (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
-<body>
+<body class="light-mode"> <!-- Default to light mode -->
 
     <header class="main-header">
         <nav class="navbar">
@@ -34,48 +34,28 @@
     </header>
 
     <main>
-        <!-- HERO SECTION (Identical structure) -->
+        <!-- HERO SECTION -->
         <section class="hero-section" id="home">
             <div class="hero-content">
-                <h1 class="hero-headline">Roblox Systems Architect & Programmer</h1>
+                <h1 class="hero-headline">Systems Architect & Creative Technologist</h1>
                 <p class="hero-subline">Designing and building robust, efficient, and immersive digital experiences on Roblox and beyond. Specializing in machine learning, algorithm design, and full-stack game development.</p>
-                <div class="hero-cta">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
+                <div class="hero-cta"><a href="#portfolio" class="btn btn-primary">View My Work</a><a href="#contact" class="btn btn-secondary">Get In Touch</a></div>
             </div>
         </section>
 
-        <!-- SERVICES SECTION (Identical structure) -->
+        <!-- SERVICES SECTION -->
         <section id="services" class="content-section">
             <h2 class="section-title">Core Expertise</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <i data-feather="cpu" class="service-icon"></i>
-                    <h3>Machine Learning</h3>
-                    <p>Skilled in deploying ML models and developing AI features that integrate seamlessly into game environments, creating smarter and more dynamic experiences.</p>
-                </div>
-                <div class="service-card">
-                    <i data-feather="play-circle" class="service-icon"></i>
-                    <h3>Roblox Game Development</h3>
-                    <p>Architecting immersive multiplayer systems from the ground up, with a strong focus on performance, scalability, and optimization for high-concurrency.</p>
-                </div>
-                <div class="service-card">
-                    <i data-feather="git-merge" class="service-icon"></i>
-                    <h3>Algorithm & Systems Design</h3>
-                    <p>A deep foundation in data structures and competitive programming, enabling the design of efficient, elegant solutions to complex back-end challenges.</p>
-                </div>
+                <div class="service-card"><i data-feather="cpu" class="service-icon"></i><h3>Machine Learning</h3><p>Skilled in deploying ML models and developing AI features that integrate seamlessly into game environments, creating smarter and more dynamic experiences.</p></div>
+                <div class="service-card"><i data-feather="play-circle" class="service-icon"></i><h3>Roblox Game Development</h3><p>Architecting immersive multiplayer systems from the ground up, with a strong focus on performance, scalability, and optimization for high-concurrency.</p></div>
+                <div class="service-card"><i data-feather="git-merge" class="service-icon"></i><h3>Algorithm & Systems Design</h3><p>A deep foundation in data structures and competitive programming, enabling the design of efficient, elegant solutions to complex back-end challenges.</p></div>
             </div>
         </section>
         
         <!-- UPDATED PORTFOLIO SECTION -->
         <section id="portfolio" class="content-section">
-            <h2 class="section-title">Featured Projects</h2>
-
-            <div class="project-showcase reverse">
-                <div class="project-media"><video controls loop muted><source src="assets/RoomGenRBX.mp4" type="video/mp4"></video></div>
-                <div class="project-description"><h3>Dynamic Room Generation</h3><p>A procedural generation system for a horror game museum. This implementation adds significant replayability by creating unique structural variations each round, ensuring no two experiences are the same.</p></div>
-            </div>
+            <h2 class="section-title">Selected Works</h2>
 
             <div class="project-showcase">
                 <div class="project-media"><video controls loop muted><source src="assets/AiSystemTest.mp4" type="video/mp4"></video></div>
@@ -92,7 +72,7 @@
                 <div class="project-description"><h3>In-Game Dev Console</h3><p>Custom terminal UI built for developers and administrators. Enables real-time control over game systems, live parameter manipulation, and advanced player management.</p></div>
             </div>
             
-            <div class="project-showcase reverse">
+             <div class="project-showcase reverse">
                 <div class="project-media"><video controls loop muted><source src="assets/CameraTest.mp4" type="video/mp4"></video></div>
                 <div class="project-description"><h3>Dynamic Camera Movement</h3><p>A clip showcasing nuanced camera movements designed to enhance realism and immersion in Roblox games. This system is integrated into player actions for a more cinematic feel.</p></div>
             </div>
@@ -104,57 +84,13 @@
             <div class="timeline">
                 <div class="timeline-item"><div class="timeline-meta"><span class="timeline-year">2022 - Present</span><span class="timeline-marker"></span></div><div class="timeline-content"><h3 class="timeline-title">Freelance Commissions & Skill Expansion</h3><p>Contributed to diverse Roblox games via commissions, focusing on system architecture and performance optimization. Simultaneously expanded expertise into web development, machine learning, and advanced algorithm design.</p></div></div>
                 <div class="timeline-item"><div class="timeline-meta"><span class="timeline-year">2020 - 2022</span><span class="timeline-marker"></span></div><div class="timeline-content"><h3 class="timeline-title">Developer, Terror's Past (Roblox)</h3><p>Developed core systems for high-concurrency multiplayer games. Prototyped and implemented key gameplay mechanics, AI behaviors, and internal development tools in a live service environment.</p></div></div>
-                <div class="timeline-item"><div class="timeline-meta"><span class="timeline-year">Pre-2020</span><span class="timeline-marker"></span></div><div class="timeline-content"><h3 class="timeline-title">Foundational Projects & Collaborations</h3><p>Built a strong foundation in game mechanics and code optimization through personal Roblox projects and collaborations on horror-themed games, sparking an interest in systems architecture.</p></div></div>
+                 <div class="timeline-item"><div class="timeline-meta"><span class="timeline-year">Pre-2020</span><span class="timeline-marker"></span></div><div class="timeline-content"><h3 class="timeline-title">Foundational Projects & Collaborations</h3><p>Built a strong foundation in game mechanics and code optimization through personal Roblox projects and collaborations on horror-themed games, sparking an interest in systems architecture.</p></div></div>
             </div>
         </section>
-
-        <!-- CONTACT SECTION -->
+        
         <section id="contact" class="contact-section"><h2 class="section-title">Let's Build Together</h2><p class="contact-subline">Have a project in mind or an interesting challenge to solve? I'm available for freelance commissions and collaborations.</p><p class="contact-info"><span class="contact-label">// Email</span><a href="mailto:rounakdas2025@gmail.com">rounakdas2025@gmail.com</a></p><p class="contact-info"><span class="contact-label">// Discord</span><span>az9tumas</span></p></section>
     </main>
-
-    <footer class="main-footer"><div class="footer-content"><p>© 2025 az9tumas. All Rights Reserved.</p><p class="footer-note">Designed and maintained by az9tumas. If you want to build more portfolios like this you can get in touch :></p></div></footer>
-
-    <!-- Feather Icons & Theme Toggle Script -->
-    <script>
-    feather.replace();
-
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-    const toggleIcon = themeToggle.querySelector('.toggle-icon');
-
-    // Check for saved theme in localStorage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        body.classList.add(savedTheme);
-        if (savedTheme === 'light-mode') {
-            toggleIcon.setAttribute('data-feather', 'sun');
-        } else {
-            toggleIcon.setAttribute('data-feather', 'moon');
-        }
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-        // Check for user's system preference
-        body.classList.add('light-mode');
-        toggleIcon.setAttribute('data-feather', 'sun');
-    }
-    
-    feather.replace(); // Re-run to render the correct icon
-
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
-
-        let newIcon, themeToSave;
-        if (body.classList.contains('light-mode')) {
-        newIcon = 'sun';
-            themeToSave = 'light-mode';
-        } else {
-            newIcon = 'moon';
-            themeToSave = 'dark-mode';
-        }
-        
-        toggleIcon.setAttribute('data-feather', newIcon);
-        feather.replace();
-        localStorage.setItem('theme', themeToSave);
-    });
-    </script>
+    <footer class="main-footer"><div class="footer-content"><p>© 2025 az9tumas. All Rights Reserved.</p><p class="footer-note">Designed with a "Digital Architect" ethos. Built on a foundation of clean code and minimalist design.</p></div></footer>
+    <script>/* Theme Toggle script unchanged */ feather.replace(); const t=document.getElementById("theme-toggle"),e=document.body,o=t.querySelector(".toggle-icon"),n=e=>{o.setAttribute("data-feather",e?"moon":"sun"),feather.replace()};"dark-mode"===localStorage.getItem("theme")?(e.classList.remove("light-mode"),n(!1)):(e.classList.add("light-mode"),n(!0)),t.addEventListener("click",()=>{e.classList.toggle("light-mode");const t=e.classList.contains("light-mode");localStorage.setItem("theme",t?"light-mode":"dark-mode"),n(t)}); </script>
 </body>
 </html>
